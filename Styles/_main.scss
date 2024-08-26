@@ -1,0 +1,120 @@
+.main{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 80px;
+    align-items: center;
+}
+.main-home{
+    width: 1280px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: $white-normal;
+}
+.dados{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    img{
+        width: 30px;
+    }
+    .dev{
+        font-size: 14px;
+        font-style: italic;
+    }
+    .hail{
+        background-color: $white-normal;
+        color: $black-normal;
+        padding: 6px 8px;
+        opacity: 90%;
+        border-radius: 10px;
+        i{
+            color: $red-normal;
+        }
+    }
+}
+.perfil{
+    display: flex;
+    position: relative;
+    img{
+        width: 300px;
+    }
+    .ic-linguage{
+        display: flex;
+        position: absolute;
+        img{
+            position: absolute;
+            width: 35px;
+            height: 35px;
+        }
+        .html{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .css{
+            margin-left: 220px;
+            margin-top: 50px;
+        }
+        .js{
+            margin-left: 130px;
+            margin-top: 250px;
+        }
+    }
+}
+.download{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main-about{
+    color: $white-normal;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 14px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    p{
+        font-size: 14px;
+    }
+}
+.color-red{
+    color: $red-normal;
+}
+@media screen and (max-width: 1024px) {
+    .main-home{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .dados{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .main-home{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
