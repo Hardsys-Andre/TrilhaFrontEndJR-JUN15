@@ -31,9 +31,8 @@
   width: 1280px;
   height: 50px;
   border-radius: 10px;
-  background-color: #e53939;
+  background-color: rgba(229, 57, 57, 0.8);
   gap: 5px;
-  opacity: 90%;
 }
 
 .menu-nav button {
@@ -81,11 +80,24 @@
   .menu-nav {
     gap: 30px;
   }
-  .menu-nav button:hover > span {
-    background: none;
+  .menu-nav span span {
+    font-size: 10px;
   }
   .menu {
     width: 90%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .menu-nav .itens-menu {
+    visibility: hidden;
+    width: 0px;
+    opacity: 0;
+  }
+  .menu-nav .menu {
+    justify-content: center;
+  }
+  .menu-nav i {
+    font-size: 40px;
   }
 }
 .main {
@@ -95,6 +107,7 @@
   flex-direction: column;
   height: 100vh;
   margin-top: 80px;
+  margin-bottom: 30px;
   align-items: center;
 }
 
@@ -107,6 +120,8 @@
   flex-direction: row;
   position: relative;
   color: #fff;
+  border-bottom: 1px #e53939 solid;
+  padding-bottom: 80px;
 }
 
 .dados {
@@ -125,14 +140,21 @@
   font-style: italic;
 }
 .dados .hail {
-  background-color: #fff;
-  color: #000000;
+  background-color: rgba(229, 57, 57, 0.5);
+  color: #fff;
   padding: 6px 8px;
   opacity: 90%;
   border-radius: 10px;
 }
 .dados .hail i {
   color: #e53939;
+}
+.dados .conections {
+  display: flex;
+  gap: 10px;
+}
+.dados .discord {
+  border-radius: 15px;
 }
 
 .perfil {
@@ -167,30 +189,27 @@
 .download {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
-
-.main-about {
-  color: #fff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-left: 14px;
-  margin-right: 14px;
-  margin-top: 14px;
-}
-
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.about p {
-  font-size: 14px;
-}
-
-.color-red {
+.download button {
+  background-color: #000000;
   color: #e53939;
+  border-radius: 15px;
+  padding: 4px;
+}
+.download .cv {
+  border: none;
+  text-align: end;
+}
+.download .whats {
+  border-color: #e53939;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.download .whats img {
+  width: 20px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -203,14 +222,201 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 95%;
   }
   .main-home {
-    width: 100%;
+    width: 95%;
+    height: 600px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+  }
+  .download {
+    align-items: center;
+  }
+}
+.experiences {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin-top: 80px;
+  gap: 20px;
+  border-bottom: 1px #e53939 solid;
+}
+
+.my-xp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 1280px;
+  gap: 20px;
+}
+.my-xp div {
+  width: 150px;
+  height: 150px;
+  background-color: rgba(229, 57, 57, 0.3);
+  border-radius: 20px;
+  padding: 10px;
+}
+.my-xp img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+.my-xp .prog {
+  background-color: #000000;
+  border: 1px #e53939 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-xp .inst {
+  border: 1px #e53939 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.my-xp .manu {
+  background-color: #000000;
+  border: 1px #e53939 solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.my-xp .time {
+  font-size: 10px;
+}
+
+.xp-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-bottom: 80px;
+  gap: 20px;
+  border: 1px #e53939 solid;
+  border-radius: 15px;
+  background-color: rgba(229, 57, 57, 0.3);
+}
+.xp-details div {
+  width: 150px;
+  height: 80px;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.xp-details .title {
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .experiences {
+    width: 95%;
+  }
+  .my-xp {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .experiences {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 590px) {
+  .experiences {
+    width: 95%;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+  }
+  .my-xp {
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 80px;
+    width: auto;
+  }
+  .xp-details {
+    width: 150px;
+    height: 454px;
+    flex-direction: column;
+  }
+  .xp-details div {
+    width: 150px;
+    height: 150px;
+  }
+}
+.main-about {
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: 14px;
+  margin-right: 14px;
+  margin-top: 80px;
+  width: 1280px;
+  border-bottom: 1px #e53939 solid;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+.about p {
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.avatar img {
+  width: 300px;
+}
+
+.section-title {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  color: #e53939;
+  background-color: rgba(229, 57, 57, 0.3);
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.section-title img {
+  width: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-about {
+    width: 95%;
+  }
+  .about {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-about {
+    width: 95%;
+    flex-direction: column;
+  }
+  .about {
+    width: 95%;
   }
 }
 body {
