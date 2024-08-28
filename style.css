@@ -662,6 +662,81 @@
     width: 30px;
   }
 }
+.carreira {
+  width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 80px;
+  border-bottom: 1px #e53939 solid;
+}
+.carreira .title {
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.cards-trajetoria {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 1280px;
+  margin-bottom: 80px;
+  gap: 200px;
+}
+.cards-trajetoria .profissional {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cards-trajetoria .academica {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.cards-trajetoria .titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.cards-trajetoria .titles span {
+  font-size: 20px;
+}
+.cards-trajetoria .titles p {
+  font-size: 10px;
+}
+.cards-trajetoria .cards {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #e53939 solid;
+}
+.cards-trajetoria .cards .prof-title {
+  display: flex;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.cards-trajetoria .cards p {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+.cards-trajetoria .cards .periodo {
+  display: flex;
+  justify-content: space-between;
+}
+.cards-trajetoria .cards .periodo span {
+  font-size: 14px;
+  color: #e53939;
+}
+.cards-trajetoria .atual {
+  background-color: rgba(229, 57, 57, 0.3);
+}
+
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
