@@ -379,6 +379,7 @@
 .about p {
   font-size: 12px;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .avatar img {
@@ -459,6 +460,7 @@
   font-size: 12px;
   margin-top: 12px;
   height: 80px;
+  text-align: justify;
 }
 .cards-projects .card img {
   border-radius: 10px;
@@ -732,6 +734,7 @@
   font-size: 12px;
   font-style: italic;
   margin-bottom: 30px;
+  text-align: justify;
 }
 .cards-trajetoria .cards .periodo {
   display: flex;
