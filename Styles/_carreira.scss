@@ -20,13 +20,11 @@
     margin-bottom: 80px;
     gap: 200px;
     .profissional{
-        width: 400px;
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
     .academica{
-        width: 400px;
         display: flex;
         flex-direction: column;
         gap: 40px;
@@ -45,9 +43,14 @@
         }
     }
     .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 10px;
         border-radius: 10px;
         border: 1px $red-normal solid;
+        width: 400px;
+        height: 200px;
         .prof-title{
             display: flex;
             font-size: 18px;
@@ -60,6 +63,8 @@
         }
         .periodo{
             display: flex;
+            flex-direction: row;
+            align-items: end;
             justify-content: space-between;
             span{
             font-size: 14px;
@@ -72,4 +77,62 @@
         background-color: rgba($color: $red-normal, $alpha: 0.3);
     }
 
+}
+@media screen and (max-width: 1024px ) {
+    .carreira{
+        width: 95%;
+    }
+    .cards-trajetoria{
+        width: 95%;
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 768px ) {
+    .carreira{
+        width: 95%;
+    }
+    .cards-trajetoria{
+        width: 95%;
+        gap: 20px;
+        .cards{
+            width: 350px;
+            .prof-title{
+                font-size: 14px;
+            }
+            p{
+                font-size: 10px;
+            }
+            .periodo{
+                span{
+                font-size: 12px;
+            }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 480px ) {
+    .carreira{
+        width: 95%;
+    }
+    .cards-trajetoria{
+        width: 95%;
+        gap: 30px;
+        flex-direction: column;
+        .cards{
+            width: 290px;
+            .prof-title{
+                font-size: 14px;
+            }
+            p{
+                font-size: 10px;
+            }
+            .periodo{
+                span{
+                font-size: 12px;
+            }
+            }
+        }
+    }
+    
 }
