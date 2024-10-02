@@ -24,10 +24,8 @@
 <body>
     <aside class="sidebar">
         <nav class="menu-nav">
-
             <div class="menu">
-
-                <a href="#">
+                <a href="#home">
                     <button>
                         <span>
                             <i class="fa-solid fa-bars"></i>
@@ -35,52 +33,38 @@
                     </button>
                 </a>
                 <div class="itens-menu">
-                    <a href="#">
+                    <a href="#home">
                         <button>
                             <span>
                                 <span>Home</span>
                             </span>
                         </button>
                     </a>
-                    <a href="#">
+                    <a href="#about">
                         <button>
                             <span>
                                 <span>Sobre Mim</span>
                             </span>
                         </button>
                     </a>
-                    <a href="#">
+                    <a href="#portifolio">
                         <button>
                             <span>
                                 <span>Portfólio</span>
                             </span>
                         </button>
                     </a>
-                    <a href="#">
+                    <a href="#skills">
                         <button>
                             <span>
                                 <span>Skills</span>
                             </span>
                         </button>
                     </a>
-                    <a href="#">
+                    <a href="#carreira">
                         <button>
                             <span>
                                 <span>Carreira</span>
-                            </span>
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button>
-                            <span>
-                                <span>Recomendações</span>
-                            </span>
-                        </button>
-                    </a>
-                    <a href="#">
-                        <button>
-                            <span>
-                                <span>Contato</span>
                             </span>
                         </button>
                     </a>
@@ -88,6 +72,7 @@
             </div>
         </nav>
     </aside>
+    <div id="home"></div>
     <main class="main">
         <div class="main-home">
             <section class="dados">
@@ -122,11 +107,11 @@
                 <button class="cv">
                     Baixar CV
                 </button>
-                <a href="https://api.whatsapp.com/send?phone=5512991912571&text=Olá,%20obrigado%20pelo%20contato!"
+                <a href="https://api.whatsapp.com/send?phone=5512991912571"
                     target="_blank">
                     <button class="whats">
                         <img src="assets/ic-whats.png" alt="Whatsapp">
-                        Vamos conversar
+                        Vamos conversar?
                     </button>
                 </a>
             </section>
@@ -136,7 +121,7 @@
                 <div class="prog">
                     <img src="assets/ic-prog.png" alt="Ícone Programador">
                     <span class="time">2 anos como</span>
-                    <span>Programador</span>
+                    <span>Desenvolvedor</span>
                 </div>
                 <div class="inst">
                     <img src="assets/ic-prof.png" alt="Ícone Professor">
@@ -164,6 +149,7 @@
                 </div>
             </div>
         </div>
+        <div id="about"></div>
         <div class="main-about">
             <div class="avatar">
                 <img src="assets/avatar.png" alt="Foto André">
@@ -207,6 +193,7 @@
                 </p>
             </div>
         </div>
+        <div id="portifolio"></div>
         <div class="portfolio">
             <span class="section-title">
                 <img src="assets/ic-potfolio.png" alt="Emotion Portfólio">
@@ -264,6 +251,22 @@
                     </a>
                 </div>
                 <div class="card">
+                    <span>Tá na cesta App</span>
+                    <p>Projeto criado para disponibilizar tarefas vindas do Github e dando oportunidade para que os
+                        usuários
+                        possam executar essas tarefas podendo ao fim serem recompensados com algum valor ou somente
+                        terem a
+                        oportunidade de ganharem experiência.
+                    </p>
+                    <div class="linguagem">
+                        <span>React</span>
+                        <span>TailwindCSS</span>
+                    </div>
+                    <a href="https://ta-na-cesta.vercel.app/" target="_blank">
+                        <img src="assets/tanacesta.png" alt="Projeto Ta Na Cesta">
+                    </a>
+                </div>
+                <div class="card">
                     <span>Placar Judô AJP</span>
                     <p>Projeto criado para disponibilizar tarefas vindas do Github e dando oportunidade para que os
                         usuários
@@ -282,6 +285,7 @@
                 </div>
             </div>
         </div>
+        <div id="skills"></div>
         <div class="skills">
             <span class="section-title">
                 <img src="assets/ic-tech.png" alt="Emotion Skills">
@@ -318,6 +322,7 @@
                 </div>
             </div>
         </div>
+        <div id="carreira"></div>
         <div class="carreira">
             <span class="section-title">
                 <img src="assets/ic-pasta.png" alt="Emotion Carreira">
@@ -350,8 +355,8 @@
                             <span class="prof-title">Prompt Enginner na TRIO (Freelance)</span>
                             <p>
                                 Geração de imagens e vídeos utilizando Inteligência Artificial, criando Prompts de Texto
-                                para imagens usando a ferramenta https://leonardo.ai/ e também Prompts de texto para
-                                vídeos com a ferramenta https://runwayml.com/. Utilização do PhotoShop para fazer
+                                para imagens usando a ferramenta <a href="https://leonardo.ai/" target="_blank">Leonardo AI</a> e também Prompts de texto para
+                                vídeos com a ferramenta <a href="https://runwayml.com/" target="_blank">Runwayml AI</a>. Utilização do PhotoShop para fazer
                                 as correções necessárias para a utilização das imagens com alta qualidade e perfeição.
                             </p>
                         </div>

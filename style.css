@@ -32,13 +32,13 @@
   height: 50px;
   border-radius: 10px;
   background-color: rgba(229, 57, 57, 0.8);
-  gap: 5px;
+  gap: 25px;
 }
 
 .menu-nav button {
   background: transparent;
   border: 0;
-  padding: 0;
+  padding: 10;
   text-align: center;
   cursor: pointer;
   height: 40px;
@@ -48,13 +48,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 4px 0 4px;
+  padding: 0 10px 0 10px;
   color: #fff;
   height: 30px;
   border-radius: 10px;
   line-height: 1;
   transition: all 0.3s;
-  font-size: 12px;
+  font-size: 16px;
 }
 .menu-nav i {
   color: #fff;
@@ -203,6 +203,7 @@
 }
 .download .whats {
   border-color: #e53939;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -438,13 +439,13 @@
   gap: 20px;
   margin-bottom: 80px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .cards-projects .card {
   background-color: rgba(229, 57, 57, 0.3);
   color: #fff;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 430px;
   border-radius: 10px;
   padding: 12px;
   display: flex;
@@ -464,8 +465,8 @@
 }
 .cards-projects .card img {
   border-radius: 10px;
-  width: 270px;
-  height: 150px;
+  width: 300px;
+  height: 180px;
 }
 .cards-projects .card .linguagem {
   display: flex;
@@ -487,12 +488,12 @@
   }
   .cards-projects {
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 5px;
   }
   .cards-projects .card {
-    width: 240px;
+    width: 310px;
     height: 350px;
   }
   .cards-projects .card span {
@@ -535,6 +536,7 @@
     height: 40px;
   }
   .cards-projects .card img {
+    width: 320px;
     height: 160px;
   }
   .cards-projects .card .linguagem {
@@ -565,6 +567,9 @@
   .cards-projects .card p {
     font-size: 9px;
     height: 40px;
+  }
+  .cards-projects .card img {
+    width: 270px;
   }
   .cards-projects .card .linguagem {
     gap: 2px;

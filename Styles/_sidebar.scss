@@ -23,14 +23,14 @@
     height: 50px;
     border-radius: 10px;
     background-color: rgba($color: $red-normal, $alpha: 0.8);
-    gap: 5px;
+    gap: 25px;
     
 }
 .menu-nav{
     button{
         background: transparent;
         border: 0;
-        padding: 0;
+        padding: 10;
         text-align: center;
         cursor: pointer;
         height: 40px;
@@ -40,13 +40,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 0 4px 0 4px;
+            padding: 0 10px 0 10px;
             color: $white-normal;
             height: 30px;
             border-radius: 10px;
             line-height: 1;
             transition: all 0.3s;
-            font-size: 12px;
+            font-size: 16px;
         }   
     }
     i{
