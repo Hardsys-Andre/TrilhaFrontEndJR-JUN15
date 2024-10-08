@@ -53,11 +53,17 @@
     }
 }
 
+.fotoPerfil{
+    border-radius: 160px;
+    object-fit: cover;
+    border: 2px solid red;
+}
 .perfil{
     display: flex;
     position: relative;
     img{
-        width: 300px;
+        width: 275px;
+        height: 300px;
     }
     .ic-linguage{
         display: flex;
@@ -68,16 +74,16 @@
             height: 35px;
         }
         .html{
-            margin-left: 50px;
+            margin-left: -18px;
             margin-top: 50px;
         }
         .css{
-            margin-left: 220px;
+            margin-left: 255px;
             margin-top: 50px;
         }
         .js{
             margin-left: 130px;
-            margin-top: 250px;
+            margin-top: 300px;
         }
     }
 }

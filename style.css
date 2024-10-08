@@ -23,6 +23,15 @@
   justify-content: center;
 }
 
+.menuMobile {
+  display: none;
+}
+
+@media (max-width: 590px) {
+  .menuMobile {
+    display: block;
+  }
+}
 .menu {
   display: flex;
   flex-direction: row;
@@ -31,7 +40,7 @@
   width: 1280px;
   height: 50px;
   border-radius: 10px;
-  background-color: rgba(229, 57, 57, 0.8);
+  background-color: rgba(247, 72, 72, 0.8);
   gap: 25px;
 }
 
@@ -120,7 +129,7 @@
   flex-direction: row;
   position: relative;
   color: #fff;
-  border-bottom: 1px #e53939 solid;
+  border-bottom: 1px #f74848 solid;
   padding-bottom: 80px;
 }
 
@@ -140,14 +149,14 @@
   font-style: italic;
 }
 .dados .hail {
-  background-color: rgba(229, 57, 57, 0.5);
+  background-color: rgba(247, 72, 72, 0.5);
   color: #fff;
   padding: 6px 8px;
   opacity: 90%;
   border-radius: 10px;
 }
 .dados .hail i {
-  color: #e53939;
+  color: #f74848;
 }
 .dados .conections {
   display: flex;
@@ -157,12 +166,20 @@
   border-radius: 15px;
 }
 
+.fotoPerfil {
+  border-radius: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid red;
+}
+
 .perfil {
   display: flex;
   position: relative;
 }
 .perfil img {
-  width: 300px;
+  width: 275px;
+  height: 300px;
 }
 .perfil .ic-linguage {
   display: flex;
@@ -174,16 +191,16 @@
   height: 35px;
 }
 .perfil .ic-linguage .html {
-  margin-left: 50px;
+  margin-left: -18px;
   margin-top: 50px;
 }
 .perfil .ic-linguage .css {
-  margin-left: 220px;
+  margin-left: 255px;
   margin-top: 50px;
 }
 .perfil .ic-linguage .js {
   margin-left: 130px;
-  margin-top: 250px;
+  margin-top: 300px;
 }
 
 .download {
@@ -192,8 +209,8 @@
   gap: 5px;
 }
 .download button {
-  background-color: #000000;
-  color: #e53939;
+  background-color: #0c1111;
+  color: #f74848;
   border-radius: 15px;
   padding: 4px;
 }
@@ -202,7 +219,7 @@
   text-align: end;
 }
 .download .whats {
-  border-color: #e53939;
+  border-color: #f74848;
   padding: 8px;
   display: flex;
   justify-content: center;
@@ -245,7 +262,7 @@
   color: #fff;
   margin-top: 80px;
   gap: 20px;
-  border-bottom: 1px #e53939 solid;
+  border-bottom: 1px #f74848 solid;
 }
 
 .my-xp {
@@ -259,7 +276,7 @@
 .my-xp div {
   width: 150px;
   height: 150px;
-  background-color: rgba(229, 57, 57, 0.3);
+  background-color: rgba(247, 72, 72, 0.3);
   border-radius: 20px;
   padding: 10px;
 }
@@ -268,22 +285,22 @@
   margin-bottom: 20px;
 }
 .my-xp .prog {
-  background-color: #000000;
-  border: 1px #e53939 solid;
+  background-color: #0c1111;
+  border: 1px #f74848 solid;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .my-xp .inst {
-  border: 1px #e53939 solid;
+  border: 1px #f74848 solid;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 .my-xp .manu {
-  background-color: #000000;
-  border: 1px #e53939 solid;
+  background-color: #0c1111;
+  border: 1px #f74848 solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,9 +317,9 @@
   width: 500px;
   margin-bottom: 80px;
   gap: 20px;
-  border: 1px #e53939 solid;
+  border: 1px #f74848 solid;
   border-radius: 15px;
-  background-color: rgba(229, 57, 57, 0.3);
+  background-color: rgba(247, 72, 72, 0.3);
 }
 .xp-details div {
   width: 150px;
@@ -368,7 +385,7 @@
   margin-right: 14px;
   margin-top: 80px;
   width: 1280px;
-  border-bottom: 1px #e53939 solid;
+  border-bottom: 1px #f74848 solid;
 }
 
 .about {
@@ -391,8 +408,8 @@
   display: flex;
   gap: 5px;
   justify-content: center;
-  color: #e53939;
-  background-color: rgba(229, 57, 57, 0.3);
+  color: #f74848;
+  background-color: rgba(247, 72, 72, 0.3);
   width: 150px;
   border-radius: 10px;
   text-align: center;
@@ -426,7 +443,7 @@
   flex-direction: column;
   width: 1280px;
   margin-top: 80px;
-  border-bottom: 1px #e53939 solid;
+  border-bottom: 1px #f74848 solid;
 }
 .portfolio .title {
   color: #fff;
@@ -442,7 +459,7 @@
   justify-content: space-evenly;
 }
 .cards-projects .card {
-  background-color: rgba(229, 57, 57, 0.3);
+  background-color: rgba(247, 72, 72, 0.3);
   color: #fff;
   width: 400px;
   height: 430px;
@@ -455,7 +472,7 @@
 }
 .cards-projects .card span {
   font-size: 20px;
-  color: #e53939;
+  color: #f74848;
 }
 .cards-projects .card p {
   font-size: 12px;
@@ -475,7 +492,7 @@
   gap: 5px;
 }
 .cards-projects .card .linguagem span {
-  background-color: rgba(229, 57, 57, 0.3);
+  background-color: rgba(247, 72, 72, 0.3);
   color: #fff;
   font-size: 12px;
   padding: 6px;
@@ -586,7 +603,7 @@
   align-items: center;
   color: #fff;
   margin-top: 80px;
-  border-bottom: 1px #e53939 solid;
+  border-bottom: 1px #f74848 solid;
 }
 .skills .title {
   font-size: 28px;
@@ -607,7 +624,7 @@
 }
 .cards-techs .techs-dia span {
   font-size: 14px;
-  color: #e53939;
+  color: #f74848;
   margin-bottom: 30px;
 }
 .cards-techs .techs-dia .img-techs {
@@ -682,7 +699,7 @@
   align-items: center;
   color: #fff;
   margin-top: 80px;
-  border-bottom: 1px #e53939 solid;
+  border-bottom: 1px #f74848 solid;
 }
 .carreira .title {
   font-size: 28px;
@@ -726,7 +743,7 @@
   justify-content: space-between;
   padding: 10px;
   border-radius: 10px;
-  border: 1px #e53939 solid;
+  border: 1px #f74848 solid;
   width: 400px;
   height: 200px;
 }
@@ -749,10 +766,10 @@
 }
 .cards-trajetoria .cards .periodo span {
   font-size: 14px;
-  color: #e53939;
+  color: #f74848;
 }
 .cards-trajetoria .atual {
-  background-color: rgba(229, 57, 57, 0.3);
+  background-color: rgba(247, 72, 72, 0.3);
 }
 
 @media screen and (max-width: 1024px) {
@@ -812,7 +829,7 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-color: #000000;
+  background-color: #0c1111;
 }
 
 button {
